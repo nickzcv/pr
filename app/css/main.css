@@ -14,13 +14,8 @@ body {
   padding: 0;
   height: 100%;
 }
-a {
-  text-decoration: underline;
-}
-a:hover {
-  cursor: pointer;
-  text-decoration: none;
-}
+
+
 
 .main {
   position: absolute;
@@ -28,10 +23,70 @@ a:hover {
   height: 100%;
   background-image: linear-gradient(to right bottom, #a4b239, #aebc3e, #b9c643, #c3d148, #cedb4d);
 }
+.logo {
+  font-family: 'Jura', sans-serif;
+  position: absolute;
+  top: 2rem;
+  left: 2rem;
+  border: 4px #fff solid;
+  padding: 1rem;
+  font-size: 2rem;
+  color: #fff;
+  text-transform: uppercase;
+}
 .sawmill {
   position: absolute;
+  bottom: 0;
   width: 100%;
-  height: 100%;
+  height: 60%;
   background: transparent url('../img/sawmill.svg') 50% no-repeat;
   background-size: contain;
+}
+nav {
+  position: absolute;
+  top: 10rem;
+  left: 2rem;
+  font-family: 'Jura', sans-serif;
+}
+nav a {
+  display: block;
+  font-size: 1.6rem;
+  color: #fff;
+  margin: 2rem 0;
+}
+nav a:hover {
+  color: #fff;
+}
+
+
+/* Tablets */
+@media only screen and (min-width: 768px) {
+  .logo {
+    left: 10%;
+  }
+  .sawmill {
+    height: 90%;
+  }
+  nav {
+    left: 10%;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 992px) {
+
+}
+
+/* Large screens */
+@media only screen and (min-width: 1200px) {
+  .logo {
+
+  }
+}
+
+/* Large screens */
+@media only screen and (min-width: 1400px) {
+  .logo {
+
+  }
 }
