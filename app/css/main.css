@@ -1,4 +1,3 @@
-@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700&subset=cyrillic-ext");
 /* Base styles
 -------------------------------------------------- */
 html {
@@ -7,20 +6,32 @@ html {
   position: relative;
   font-size: 1rem;
   min-height: 100%;
-  min-width: 320px; }
+  min-width: 320px;
 
+}
 body {
   margin: 0;
   padding: 0;
-  background: transparent url('../img/bg.jpg')  no-repeat;
-  background-size: contain;
+  height: 100%;
 }
-
 a {
   text-decoration: underline;
 }
-
 a:hover {
   cursor: pointer;
   text-decoration: none;
+}
+
+.main {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(to right bottom, #a4b239, #aebc3e, #b9c643, #c3d148, #cedb4d);
+}
+.sawmill {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: transparent url('../img/sawmill.svg') 50% no-repeat;
+  background-size: contain;
 }
