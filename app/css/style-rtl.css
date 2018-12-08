@@ -171,8 +171,13 @@ h6 {font-size:17px;text-transform:uppercase;padding:0 0 23px;}
 
 .intro 					{background:url(../images/sawmill.jpg) 50% 0 fixed no-repeat;height:100vh;overflow:hidden;float:right;width:100%;display:block;min-height:768px;}
 .intro .textwidget		{color:#fff;padding-top:24%;text-align:center;}
-.intro .textwidget h1 	{text-transform:uppercase;font-size:61px;margin:0 0 -5px;}
+.intro .textwidget h1 	{text-transform:uppercase;font-size:35px;margin:0 0 -5px;}
 .intro .textwidget h2 	{text-transform:uppercase;font-size:23px;margin:0;}
+
+@media screen and (min-width: 750px) {
+  .intro .textwidget h1 	{font-size: 61px;}
+}
+
 .intro .actions			{margin:6px 0 0;padding:46px 0 0;background:url(../images/separator.jpg) 50% 0 no-repeat;border:none;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
 .intro .actions .btn		{margin:0 10px;}
 

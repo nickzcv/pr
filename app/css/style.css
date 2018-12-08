@@ -169,10 +169,20 @@ h6 {font-size:17px;text-transform:uppercase;padding:0 0 23px;}
 .home .main 				{padding:0;}
 .home .advanced-search 	{margin:0;}
 
-.intro 					{background:url(../images/homebg.jpg) 50% 0 fixed no-repeat;height:100vh;overflow:hidden;float:left;width:100%;display:block;min-height:768px;}
+.intro 					{background:url(../images/sawmill-bg-home.jpg) 50% 0 fixed no-repeat;height:100vh;overflow:hidden;float:left;width:100%;display:block;min-height:768px;}
 .intro .textwidget		{color:#fff;padding-top:24%;text-align:center;}
-.intro .textwidget h1 	{text-transform:uppercase;font-size:61px;margin:0 0 -5px;}
-.intro .textwidget h2 	{text-transform:uppercase;font-size:23px;margin:0;}
+.intro .textwidget h1 	{text-transform:uppercase;font-size:30px;margin:0 0 -5px;text-shadow: 3px 3px 18px rgba(25,31,38,0.60);}
+.intro .textwidget h2 	{text-transform:uppercase;font-size:23px;margin:0;text-shadow: 3px 3px 18px rgba(25,31,38,0.60);}
+
+@media screen and (min-width: 450px) {
+  .intro .textwidget h1 	{font-size: 40px;}
+  .intro .textwidget h2 	{font-size: 30px;}
+}
+@media screen and (min-width: 750px) {
+  .intro .textwidget h1 	{font-size: 61px;}
+  .intro .textwidget h2 	{font-size: 40px;}
+}
+
 .intro .actions			{margin:6px 0 0;padding:46px 0 0;background:url(../images/separator.jpg) 50% 0 no-repeat;border:none;-webkit-box-shadow:none;-moz-box-shadow:none;box-shadow:none;}
 .intro .actions .btn		{margin:0 10px;}
 
@@ -184,7 +194,7 @@ h6 {font-size:17px;text-transform:uppercase;padding:0 0 23px;}
 .services.boxed .details h4 a 					{color:#191F26;}
 
 .services.iconic	{padding:68px 0 30px;}
-.services.iconic h3	{text-transform:uppercase;font-size:17px;padding:0 0 10px;}
+.services.iconic h3	{text-transform:uppercase;font-size:17px;padding:25px 0 0 10px;}
 
 .partners 	{float:left;width:100%;padding:48px 0 30px;}
 .partners h2	{text-transform:uppercase;font-size:30px;padding:0 0 40px;}
@@ -1017,8 +1027,6 @@ div.radio input 						{opacity: 0;filter: alpha(opacity=0);-moz-opacity: 0;borde
 
 @media screen and (max-width: 500px) {
 .intro .textwidget 	{padding-top:50%;}
-.intro .textwidget h1 {font-size:45px;}
-.intro .textwidget h2 {font-size:17px;}
 .intro .btn.large	{font-size:14px;width:46%;margin:0 1%;}
 .advanced-search .form-group.spinner input {width:100%;}
 
@@ -1026,7 +1034,7 @@ div.radio input 						{opacity: 0;filter: alpha(opacity=0);-moz-opacity: 0;borde
 }
 
 @media screen and (max-width: 400px) {
-.intro .textwidget h1 {font-size:40px;}
+
 .intro .btn.large	{width:100%;margin:0 0 15px;}
 
 .xdsoft_datetimepicker 		{padding-right:0;max-width:100%;}
